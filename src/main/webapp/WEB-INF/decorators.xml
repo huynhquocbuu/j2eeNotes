@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/decorators">
+    <!-- Any urls that are excluded will never be decorated by Sitemesh -->
+    <excludes>
+        <pattern>/assets/*</pattern>
+        <pattern>/hello-servlet</pattern>
+        <pattern>/index.jsp</pattern>
+    </excludes>
+    <decorator name="default" page="default_layout.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+
+    <decorator name="authenticate" page="authenticate_layout.jsp">
+        <pattern>/auth/*</pattern>
+    </decorator>
+</decorators>
